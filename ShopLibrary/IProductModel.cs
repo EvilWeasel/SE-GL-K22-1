@@ -11,7 +11,6 @@
   {
     bool HasOrderBeenCompleted { get; set; }
     string Title { get; set; }
-
-    void ShipItem(CustomerModel customer);
+    void ShipItem(ICustomerModel customer);
   }
 }

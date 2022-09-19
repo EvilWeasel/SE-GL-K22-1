@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace ShopLibrary
 {
-  public class DigitalProductModel : IProductModel
+  public class DigitalProductModel : IDigitalProductModel // BaseProductModel 
   {
-    //public string Title { get; set; } = string.Empty;
-    //public bool HasOrderBeenCompleted { get; set; } = false;
     public int TotalDownloadsLeft { get; set; } = 5;
     public bool HasOrderBeenCompleted { get; set; } = false;
     public string Title { get; set; } = string.Empty;
 
-    public void ShipItem(CustomerModel customer)
+    public void ShipItem(ICustomerModel customer)
     {
       if (!HasOrderBeenCompleted)
       {

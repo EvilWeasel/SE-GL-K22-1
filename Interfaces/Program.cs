@@ -39,17 +39,26 @@
 
 
 List<IProductModel> cart = AddSampleData();
-CustomerModel customer = GetCustomer();
+ICustomerModel customer = GetCustomer();
 
 foreach (IProductModel product in cart)
 {
   product.ShipItem(customer);
+  if (product is IDigitalProductModel digital)
+  {
+    Console.WriteLine(
+     $"For the product {digital.Title} you have {digital.TotalDownloadsLeft} downloads left.");
+  }
+  if (product is ICourseProductModel course)
+  {
+    Console.WriteLine($"Your Course {course.Title} has been unlocked for you and is available untill {course.ExpiryDate}.");
+  }
 }
 
 
-static CustomerModel GetCustomer()
+static ICustomerModel GetCustomer()
 {
-  return new CustomerModel
+  return new AlternateCustomerModel
   {
     FirstName = "Max",
     LastName = "Muster",
@@ -69,9 +78,14 @@ List<IProductModel> AddSampleData()
   products.Add(new PhysicalProductModel { Title = "4 TB HDD 7200RPM" });
 
   // Digital Products
-  products.Add(new DigitalProductModel { Title = "SE-GL Course" });
-  products.Add(new DigitalProductModel { Title = "SE Vertiefung Course" });
-  products.Add(new DigitalProductModel { Title = "Javascript Basics Course" });
+  products.Add(new DigitalProductModel { Title = "Windows Server 2022 License Key" });
+  products.Add(new DigitalProductModel { Title = "Windows Server 2019 License Key" });
+  products.Add(new DigitalProductModel { Title = "Windows Server 2016 License Key" });
+
+  // OnlineCourses
+  products.Add(new CourseProductModel { Title = "SE-GL Course" });
+  products.Add(new CourseProductModel { Title = "SE Vertiefung Course" });
+  products.Add(new CourseProductModel { Title = "Javascript Basics Course" });
 
   return products;
 }

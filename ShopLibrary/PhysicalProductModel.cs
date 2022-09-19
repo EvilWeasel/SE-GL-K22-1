@@ -16,11 +16,11 @@ namespace ShopLibrary
   /// Das liegt daran, dass wir in diese Klasse durch den Vertrag festlegen,
   /// das alle Member des Interfaces von der Klasse implementiert werden MÜSSEN.
   /// </summary>
-  public class PhysicalProductModel : IProductModel
+  public class PhysicalProductModel : IProductModel // BaseProductModel
   {
     public string Title { get; set; } = string.Empty;
     public bool HasOrderBeenCompleted { get; set; } = false;
-    public void ShipItem(CustomerModel customer)
+    public void ShipItem(ICustomerModel customer)
     {
       if (!HasOrderBeenCompleted)
       {

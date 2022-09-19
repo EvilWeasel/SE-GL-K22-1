@@ -1,8 +1,13 @@
-﻿namespace ShopLibrary
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ShopLibrary
 {
-  public class CustomerModel : ICustomerModel
+  public class AlternateCustomerModel : ICustomerModel
   {
-    // private string _firstName;
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
     public string StreetAddress { get; set; } = string.Empty;
@@ -10,17 +15,10 @@
     public string EmailAddress { get; set; } = string.Empty;
     public string PhoneNumber { get; set; } = string.Empty;
 
-    //private int _age;
-
-    //public int getAge()
+    public string GetFullName() => $"{FirstName} {LastName}";
+    //public string GetFullName()
     //{
-    //  return _age;
+    //  return $"{FirstName} {LastName}";
     //}
-    //public void setAge(int age)
-    //{
-    //  _age = age;
-    //}
-    //int myvar = getAge();
-    //setAge(my_var);
   }
 }
