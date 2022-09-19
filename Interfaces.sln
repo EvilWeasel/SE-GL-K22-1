@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.32804.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{1F52DFF7-9ED3-4798-9660-F0C277A7FC09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopLibrary", "ShopLibrary\ShopLibrary.csproj", "{FF6B0ED3-319F-47E1-ADEA-128A9E828B73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F52DFF7-9ED3-4798-9660-F0C277A7FC09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F52DFF7-9ED3-4798-9660-F0C277A7FC09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F52DFF7-9ED3-4798-9660-F0C277A7FC09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F52DFF7-9ED3-4798-9660-F0C277A7FC09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6B0ED3-319F-47E1-ADEA-128A9E828B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6B0ED3-319F-47E1-ADEA-128A9E828B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6B0ED3-319F-47E1-ADEA-128A9E828B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6B0ED3-319F-47E1-ADEA-128A9E828B73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1759A26B-5594-4F48-828A-CF5A79868BAD}
+	EndGlobalSection
+EndGlobal
