@@ -1,5 +1,17 @@
-﻿*Hello World*
-# Alle Themen die wir Wiederholen wollen
+﻿# Alle Themen die wir Wiederholen wollen
+
+Vermerk: Wenn irgendwo in diesem Dokument oder diesem anhängigen Dokumenten das Wort `Cool` vorkommt,
+dann ist damit die Programmiersprache C# gemeint.
+
+Da das Pound/Hashtag Symbol in Markdown für Headings gedacht ist, nenne ich C# in diesen "Cool".
+FYI: Cool war der ursprüngliche Name für C#, bevor es released wurde. Dabei steht Cool für:
+
+- C-like
+- Object
+- Orientated
+- Language
+
+The more you know... (⌐■_■)
 
 ## Inhaltsverzeichnis
 
@@ -13,7 +25,9 @@
 - Konvertierung & Parsing
 - Debug
 
+## Namespaces und Scoping in Cool
 
+s. Präsentation in `/Presentation/Cool - Namespaces/index.html`
 
 
 ## Querverweise
