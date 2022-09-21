@@ -1,0 +1,1 @@
+﻿// global using NamespaceDemoDot6.Models;
