@@ -15,20 +15,24 @@ The more you know... (⌐■_■)
 
 ## Inhaltsverzeichnis
 
+- [Namespaces und Scoping in Cool](#Namespaces-und-Scoping-in-Cool)
 
 ## Themensammlung
 
-- Enumeratoren (List & Array)
-- Klassen inkl. Methoden
-- C# Aufbau von Namespaces, Klassen, Methoden
-- Fallunterscheidungen (if, verschachtelt, switch, tenary statements)
-- Konvertierung & Parsing
-- Debug
+- [x] Enumeratoren (List & Array)
+- [ ] Klassen inkl. Methoden
+- [x] C# Aufbau von Namespaces, Klassen, Methoden
+- [ ] Fallunterscheidungen
+	- [x] If
+	- [ ] verschachtelt
+	- [ ] switch
+	- [ ] tenary statements
+- [ ] Konvertierung & Parsing
+- [x] Debug
 
 ## Namespaces und Scoping in Cool
 
 s. Präsentation in `/Presentation/Cool - Namespaces/index.html`
-
 
 ## Querverweise
 
