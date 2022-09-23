@@ -10,6 +10,8 @@
 // }
 var primeNumbers = Generators.GetPrimeNumbers().Take(10);
 
+var myList = primeNumbers.ToList();
+
 var iterator = primeNumbers.GetEnumerator();
 
 Console.WriteLine("--while--");
